@@ -75,7 +75,7 @@ function App() {
                         <>
                             <p className="text-4xl font-bold">⏰ Time is over!</p>
 
-                            {highestAnswers<answers && (
+                            {highestAnswers==answers && (
                                 <p className="text-5xl mt-4 bg-yellow-300 px-5 py-2 rounded-xl font-semibold shadow">
                                     New Record 🎉
                                 </p>

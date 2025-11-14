@@ -25,7 +25,7 @@ function WebCam({setFingerCount}: { setFingerCount: (fingerCount: number) => voi
         const loadModel = async () => {
             const vision = await FilesetResolver.forVisionTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/wasm");
             handLandmarker = await HandLandmarker.createFromOptions(vision, {
-                baseOptions: {modelAssetPath: "/models/hand_landmarker.task"},
+                baseOptions: {modelAssetPath: "/math-camera/models/hand_landmarker.task"},
                 runningMode: "VIDEO",
                 numHands: 1,
             });
